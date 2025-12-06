@@ -1,0 +1,8 @@
+.container{max-width: 1000px}
+h1{ color: #333; }
+#book-grid .card{ transition: transform .15s ease, box-shadow .15s ease }
+#book-grid .card:hover{ transform: translateY(-2px); box-shadow: 0 8px 16px rgba(0,0,0,.15) }
+#book-grid .badge{ background: #60a5fa; }
+body{ background: #ccffcc; }
+section{ background: #ffffff; border: 1px solid #e5e7eb; border-radius: 8px; padding: 16px; }
+section + section{ margin-top: 16px; }

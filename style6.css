@@ -1,0 +1,50 @@
+
+body {
+	font-family: 'Poppins', system-ui, Arial, sans-serif;
+	margin: 0;
+	display: flex;
+	min-height: 100vh;
+	align-items: center;
+	justify-content: center;
+	background: linear-gradient(135deg, #ffe29f 0%, #ffa99f 50%, #ff719a 100%);
+}
+
+
+.card {
+	max-width: 500px;
+	padding: 20px;
+	border-radius: 14px;
+	background: linear-gradient(180deg, #ffffff 0%, #fff5f7 100%);
+	box-shadow: 0 12px 28px rgba(255, 76, 124, 0.25);
+	border: 2px solid rgba(255, 113, 154, 0.35);
+}
+
+
+.row { margin: 8px 0; }
+
+input,
+select,
+button {
+	padding: 10px 12px;
+	border: 1px solid #ffd1dc;
+	border-radius: 10px;
+}
+
+
+button {
+	background: linear-gradient(90deg, #ff719a, #ff9a9e);
+	color: #ffffff;
+	cursor: pointer;
+	box-shadow: 0 8px 18px rgba(255, 113, 154, 0.35);
+	border: none;
+}
+
+#msg {
+	margin-top: 12px;
+	padding: 12px;
+	background: linear-gradient(180deg, #fdf2f8 0%, #ffeef4 100%);
+	border-radius: 10px;
+	color: #4a044e;
+	border: 1px solid rgba(255, 182, 193, 0.5);
+}
+
