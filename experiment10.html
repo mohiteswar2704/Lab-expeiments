@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Experiment 10 — Tasks + Storage + Fetch</title>
+    <link rel="stylesheet" href="style10.css" />
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Task Dashboard</h1>
+            <label class="theme">
+                <span>Dark Mode</span>
+                <input type="checkbox" id="dark-toggle" />
+            </label>
+        </header>
+
+        <section class="add">
+            <input id="task-input" type="text" placeholder="Add a task" />
+            <button id="add-btn" class="btn">Add</button>
+        </section>
+
+        <section class="filters">
+            <select id="filter-select">
+                <option value="all">All</option>
+                <option value="open">Open</option>
+                <option value="done">Done</option>
+            </select>
+            <button id="clear-btn" class="btn btn-secondary">Clear All</button>
+        </section>
+
+        <section>
+            <ul id="task-list" class="list"></ul>
+            <div id="error" class="error" hidden></div>
+        </section>
+
+        <section class="external">
+            <button id="load-external" class="btn">Load External Data</button>
+            <div id="external-list" class="grid"></div>
+        </section>
+    </div>
+
+    <script src="app10.js"></script>
+</body>
+</html>

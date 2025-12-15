@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Experiment 9 — Async API + calc()</title>
+    <link rel="stylesheet" href="style9.css" />
+    <style>
+        .no-css{padding:16px}
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Travel Explorer</h1>
+        <button id="load-btn" class="btn">Load Destinations</button>
+    </header>
+
+    <main class="layout">
+        <aside class="sidebar">
+            <h2>Filters</h2>
+            <button id="refresh-btn" class="btn btn-secondary">Refresh</button>
+        </aside>
+        <section class="content">
+            <div id="status" class="status">Click "Load Destinations" to start.</div>
+            <div id="grid" class="grid"></div>
+        </section>
+    </main>
+
+    <script src="app9.js"></script>
+</body>
+</html>

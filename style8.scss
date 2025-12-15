@@ -1,0 +1,68 @@
+$gap: 16px;
+$radius: 10px;
+$shadow: 0 8px 16px rgba(0,0,0,.1);
+
+:root {
+  --bg: #f8fafc;
+  --text: #0f172a;
+  --card-bg: #ffffff;
+  --accent: #2563eb;
+}
+
+[data-theme="dark"] {
+  --bg: #0b1220;
+  --text: #e5e7eb;
+  --card-bg: #0f172a;
+  --accent: #60a5fa;
+}
+
+@mixin card {
+  background: var(--card-bg);
+  border-radius: $radius;
+  box-shadow: $shadow;
+}
+
+@mixin btn($bg) {
+  background: $bg;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: $radius;
+  cursor: pointer;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: system-ui, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.container { max-width: 1000px; margin: 0 auto; padding: $gap; }
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: $gap;
+  h1 { margin: 0; }
+  .btn { @include btn(var(--accent)); }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: $gap;
+}
+
+.card {
+  @include card;
+  padding: $gap;
+  display: flex;
+  flex-direction: column;
+  .title { font-size: 18px; font-weight: 600; }
+  .price { margin-top: 4px; color: var(--accent); }
+  .desc { margin-top: 8px; font-size: 14px; }
+  .badge { margin-top: 8px; display: inline-block; background: rgba(37,99,235,.1); color: var(--accent); padding: 2px 8px; border-radius: 999px; font-size: 12px; }
+}
